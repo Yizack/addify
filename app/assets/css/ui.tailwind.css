@@ -4,3 +4,14 @@
 @custom-variant dark (&:where(.dark, .dark *));
 @custom-variant light (&:where(.light, .light *));
 @custom-variant hover (&:hover);
+
+ @theme static {
+  --color-green-400: #1ed760;
+
+  --ui-color-neutral-400: #a3a3a3;
+  --ui-color-neutral-500: #737373;
+  --ui-color-neutral-700: #2a2a2a;
+  --ui-color-neutral-800: #1f1f1f;
+  --ui-color-neutral-900: #121212;
+  --ui-color-neutral-950: #000000;
+ }

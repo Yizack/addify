@@ -30,7 +30,7 @@ const resetForm = () => {
 
 <template>
   <UContainer as="main" class="max-w-150">
-    <UCard>
+    <UCard class="bg-elevated shadow">
       <form v-if="user" class="space-y-4" @submit.prevent="isOpenModal = true">
         <h2 class="text-2xl text-center">
           <strong>Add to playlist</strong>
