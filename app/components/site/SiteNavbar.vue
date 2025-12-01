@@ -31,12 +31,16 @@ const userMenu: DropdownMenuItem[][] = [
       <UDropdownMenu v-if="user" :items="userMenu" :content="{ align: 'end', side: 'bottom', sideOffset: 8 }">
         <UButton
           :label="user.display_name"
-          icon="lucide:user"
           trailing-icon="lucide:chevron-down"
           variant="subtle"
           color="neutral"
           class="rounded-lg"
-        />
+        >
+          <template #leading>
+            <UAvatar v-if="!user.images?.[0]?.url" :src="user.images?.[0]?.url" :alt="user.display_name" size="2xs" />
+            <UAvatar v-else :alt="user.display_name" size="2xs" class="bg-accented" />
+          </template>
+        </UButton>
       </UDropdownMenu>
     </template>
   </UHeader>

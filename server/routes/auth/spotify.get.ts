@@ -10,7 +10,8 @@ export default defineOAuthSpotifyEventHandler({
     const session = {
       user: {
         id: user.id,
-        display_name: user.display_name
+        display_name: user.display_name,
+        images: user.images
       },
       secure: {
         accessToken: tokens.access_token,
