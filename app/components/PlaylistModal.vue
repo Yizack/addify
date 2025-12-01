@@ -84,7 +84,7 @@ const addToPlaylist = async () => {
 </script>
 
 <template>
-  <UModal v-if="playlist" v-model:open="isOpen" title="Add to Playlist">
+  <UModal v-if="playlist" v-model:open="isOpen" title="Details">
     <template #body>
       <div class="space-y-6">
         <!-- Playlist Info -->
