@@ -43,6 +43,7 @@ const resetForm = () => {
             size="xl"
             class="w-full"
             value-key="value"
+            placeholder="Select playlist"
             required
           />
         </UFormField>
