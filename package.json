@@ -1,0 +1,50 @@
+{
+  "private": true,
+  "name": "addify",
+  "version": "1.0.0",
+  "description": "Spotify playlist adder.",
+  "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "Yizack Rangel",
+    "email": "yizackr@gmail.com",
+    "url": "https://yizack.com"
+  },
+  "homepage": "https://github.com/Yizack/addify",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yizack/addify.git"
+  },
+  "bugs": "https://github.com/Yizack/addify/issues",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev --port=5173 --public",
+    "generate": "nuxt generate",
+    "preview": "wrangler d1 migrations apply DB --local && wrangler dev",
+    "postinstall": "nuxt prepare",
+    "analyze": "nuxt analyze",
+    "lint": "pnpm lint:eslint && pnpm lint:stylelint",
+    "lint:fix": "pnpm lint:eslint --fix && pnpm lint:stylelint --fix",
+    "lint:eslint": "eslint --config .config/eslint.mjs",
+    "lint:eslint:inspect": "pnpm dlx @eslint/config-inspector --config .config/eslint.mjs",
+    "lint:stylelint": "stylelint \"**/*.{css,scss,sass}\" --config .config/stylelint.json",
+    "test:types": "vue-tsc -b --noEmit"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "^1.11.0",
+    "@nuxt/ui": "^4.2.1",
+    "@nuxthub/core": "^0.9.1",
+    "@nuxtjs/sitemap": "^7.4.7",
+    "eslint": "^9.39.1",
+    "nuxt": "^4.2.1",
+    "nuxt-auth-utils": "^0.5.25",
+    "sass": "^1.94.2",
+    "stylelint": "^16.26.1",
+    "stylelint-config-standard-scss": "^16.0.0",
+    "typescript": "^5.9.3",
+    "vue-tsc": "^3.1.5",
+    "wrangler": "^4.51.0",
+    "zod": "^4.1.13"
+  },
+  "packageManager": "pnpm@10.24.0"
+}
