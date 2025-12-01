@@ -63,7 +63,7 @@ const resetForm = () => {
           <template #label>
             Position in Playlist
             <UPopover mode="hover">
-              <UIcon name="lucide:circle-question-mark" class="inline-block ml-1" size="1.2rem" />
+              <UIcon name="lucide:info" class="inline-block ml-1" size="1.2rem" />
               <template #content>
                 <div class="p-4 max-w-48 text-sm">
                   <span>Leave empty or '<code class="text-primary">0</code>' to add track at the end of the playlist, '<code class="text-primary">1</code>' will add the track at the beginning of the playlist.</span>

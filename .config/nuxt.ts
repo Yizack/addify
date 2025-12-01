@@ -1,4 +1,5 @@
 import { SITE } from "../shared/utils/site";
+import icons from "./icons";
 
 export default defineNuxtConfig({
   // future: { compatibilityVersion: 5 },
@@ -122,8 +123,11 @@ export default defineNuxtConfig({
   },
 
   icon: {
-    mode: "svg"
-    // provider: "none"
+    mode: "svg",
+    provider: "none",
+    clientBundle: {
+      icons
+    }
   },
 
   sitemap: {
