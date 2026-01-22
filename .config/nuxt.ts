@@ -73,7 +73,7 @@ export default defineNuxtConfig({
     typedPages: true
   },
 
-  compatibilityDate: "2025-12-01",
+  compatibilityDate: "2026-01-22",
 
   nitro: {
     prerender: {
@@ -93,7 +93,7 @@ export default defineNuxtConfig({
     }
   },
 
-  hub: { workers: true },
+  hub: {},
 
   vite: {
     css: {
