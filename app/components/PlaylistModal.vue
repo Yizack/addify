@@ -111,9 +111,8 @@ const addToPlaylist = async () => {
                 {{ playlist.name }}
               </ULink>
             </h4>
-            <p v-if="playlist.description" class="text-sm text-muted line-clamp-4">
-              {{ playlist.description }}
-            </p>
+            <!-- eslint-disable-next-line vue/no-v-html -->
+            <p v-if="playlist.description" class="text-sm text-muted line-clamp-4" v-html="playlist.description" />
             <div class="flex items-center gap-2 text-sm">
               <UIcon name="lucide:user" class="size-4" />
               <ULink
