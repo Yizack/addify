@@ -22,6 +22,7 @@ export default defineEventHandler(async (event) => {
       description: playlist.description,
       images: playlist.images,
       owner: {
+        id: playlist.owner.id,
         display_name: playlist.owner.display_name
       },
       tracks: {
