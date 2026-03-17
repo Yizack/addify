@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     "@nuxtjs/sitemap",
     "@nuxthub/core",
     "@nuxt/ui",
+    "nuxt-ui-colors-no-inline",
     "nuxt-auth-utils"
   ],
 
@@ -46,7 +47,10 @@ export default defineNuxtConfig({
 
   ui: {
     colorMode: true,
-    fonts: false
+    fonts: false,
+    theme: {
+      colors: ["primary", "success", "error"]
+    }
   },
 
   runtimeConfig: {
