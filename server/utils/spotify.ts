@@ -72,7 +72,7 @@ export class Spotify {
   }
 
   async addToPlaylist (playlistId: string, options: { trackId: string, position?: number }) {
-    await $fetch(`/playlists/${playlistId}/tracks`, {
+    await $fetch(`/playlists/${playlistId}/items`, {
       method: "POST",
       baseURL: this.apiURL,
       headers: {
